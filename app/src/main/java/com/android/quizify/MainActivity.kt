@@ -23,22 +23,6 @@ import kotlinx.coroutines.launch
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val client = Client(this)
-            .setEndpoint("https://fra.cloud.appwrite.io/v1") // Your API Endpoint
-            .setProject("689b02550012a40ac890") // Your project ID
-            .setSelfSigned(true) // Remove in production
-lifecycleScope.launch{
-    val account = Account(client)
-    val user = account.create(
-        ID.unique(),
-        "email@example.com",
-        "password",
-        "Walter O'Brien"
-    )
-
-}
-
         enableEdgeToEdge()
         setContent {
             QuizifyTheme {

@@ -57,4 +57,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("io.appwrite:sdk-for-android:8.2.2")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
+    //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
 }
